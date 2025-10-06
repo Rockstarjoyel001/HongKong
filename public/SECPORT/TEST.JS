@@ -34,7 +34,7 @@ if (storedCurrencies) {
         return {
           CountryName: cur["Currency Name"],
           CURRENCY_NAME_ARABIC: cur["Currency Name Arabic"] || "",
-          FlagUrl: `http://localhost:3000/FLAGS/${flagFile}`,
+          FlagUrl: `http://localhost:10000/FLAGS/${flagFile}`,
           BuyRate: cur["Buy Rate"] || "",
           SellRate: cur["Sell Rate"] || "",
           TTRemittanceRate: cur["TTRemittance Rate"] || "",
@@ -57,7 +57,7 @@ function getDefaultCurrency() {
   return {
     CountryName: "HONG KONG DOLLAR",
     CURRENCY_NAME_ARABIC: "",
-    FlagUrl: "http://localhost:3000/FLAGS/HK.png",
+    FlagUrl: "http://localhost:10000/FLAGS/HK.png",
     BuyRate: "24.09",
     SellRate: "0.56",
     TTRemittanceRate: "1.00",
